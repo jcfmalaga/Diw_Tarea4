@@ -8,6 +8,7 @@ body{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header{
@@ -21,8 +22,13 @@ body{
     justify-content: space-evenly;
 }
 
-.menu{
+.menu {
     background-color: antiquewhite;
+	position:sticky;
+	z-index:1000;
+	top:0px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
 .menu ul{
@@ -32,6 +38,9 @@ body{
     margin: 0;
 }
 
+img{
+    max-width: 100%;
+}
 
 
 .menu ul li a{
@@ -41,7 +50,12 @@ body{
 }
 
 .main{
+
     flex-grow: 1;
+}
+
+.marginTop {
+    padding-top: 3rem;
 }
 
 .imagen{
@@ -50,9 +64,9 @@ body{
     flex-wrap: wrap;
 }
 
-.software {
+.articulo {
     width: 80%;
-    background-color: aqua;
+    background-color: #CCC;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -70,19 +84,44 @@ body{
 .imagenesFuente{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .imagenes{
-    width: 15rem;
-    height: 15rem;
-    object-fit: contain;
-}
+    width: 15vw;
+    height: 20vh;
+    object-fit: unset; 
+    border-radius: 1rem;
+} 
 
 figcaption{
     text-align: center;
 }
 
-.footer{
-    width:100%;
-    background-color: lavender;
+.icono{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom:1rem;
+    right:5rem;
+}
+
+.video{
+    width: 60%;
+}
+
+audio {
+    max-width: 100%;
+}
+
+video{
+    max-width: 100%;
+}
+
+.filtro1{
+    filter: invert(1);
+}
+
+.filtro2{
+    filter: grayscale(1);
 }

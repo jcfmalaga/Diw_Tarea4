@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="title">
             <h1>Juan Carlos Fuentes Lamas</h1>
             <h3>Mijas Costa (Málaga)</h3>
         </div>
         
-        <nav class="menu">
-            <ul>
-                <li><a href="">Imagen</a></li>
-                <li><a href="">Audio</a></li>
-                <li><a href="">Video</a></li>
-            </ul>
-            
-        </nav>
+        
     </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#imagen">Imagen</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+        
+    </nav>
 
     <main class="main">
-        <section class="imagen">
-            <article class="software">
+        <section id="imagen" class="imagen marginTop">
+            <article class="articulo">
+                <h2>Software</h2>
                <img src="img/gimp.png" alt="logo de Gimp" class="gimp">
                <p>He usado el programa Gimp para la edición de la imágenes</p>
             </article>
-            <article class="software">
+            <article class="articulo">
                 <h2>Imágenes fuentes</h2>
                 <div class="imagenesFuente">
                     <figure>
@@ -47,7 +49,7 @@
                     </figure>
                 </div>
             </article>
-            <article class="software">
+            <article class="articulo">
                 <h2>Composición</h2>
                 <div class="imagenesFuente">
                     <figure>
@@ -60,7 +62,7 @@
                     </figure>
                 </div>
             </article>
-            <article class="software">
+            <article class="articulo">
                 <h2>Optimización y filtro</h2>
                 <div class="imagenesFuente">
                     <figure>
@@ -77,10 +79,24 @@
                     </figure>
                 </div>
             </article>
-            <article class="software">
-                <p>Prueba</p>
+            <article class="articulo">
+                <h2>Filtros CSS</h2>
+                <div class="imagenesFuente">
+                    <figure>
+                        <img src="img/composicion_mejorada.png" alt="Imagen composicion mejorada" class="imagenes">
+                        <figcaption>Imagen sin filtro CSS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/composicion_mejorada.png" alt="Imagen composicion mejorada con filtro invert" class="imagenes filtro1">
+                        <figcaption>Imagen con filtro invert de CSS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/composicion_mejorada.png" alt="Imagen composicion mejorada con filtro grayscale" class="imagenes filtro2">
+                        <figcaption>Imagen con filtro grayscale de CSS</figcaption>
+                    </figure>
+                </div>
             </article>
-            <article class="software">
+            <article class="articulo">
                 <h2>Imagen vectorial</h2>
                 <div class="imagenesFuente">
                     <figure>
@@ -91,10 +107,42 @@
             </article>
 
         </section>
-    </main>
+        <section id="audio" class="articulo marginTop">
+            <h2>Audio</h2>
+            <audio controls> 
+                <source src="audios_04/Alexey_Anisimov_-_Folk_Indie_Pop.ogg" type="audio/ogg"/> 
+                <source src="audios_04/Alexey_Anisimov_-_Folk_Indie_Pop.mp3" type="audio/mpeg"/> 
+                Su navegador es demasiado antiguo para interpretar HTML5 
+            </audio>
+            <p>Nombre del fichero: Alexey_Anisimov_-_Folk_Indie_Pop</p>
+            <p><a href="https://licensing.jamendo.com/es/track/1738213/folk-indie-pop" target="_blank"> Descargado de Jamendo</a> </p>
+            <p>Tipo de licencia: Jamendo es gratuito porque todas las licencias son Creative Commons </p>
+            <p>Tamaño: 1.781 KB</p>
+        </section>
 
-    <footer class="footer">
-        <h1>TEst</h1>
+        <section id="video" class="articulo marginTop">
+            <h2>Video</h2>
+            <div class="video">
+                <video controls>
+                    <source src="videos_04/Video_editado.mp4" type="video/mp4">
+                    <source src="videos_04/Video_editado.m4v"  type="video/m4v">
+                </video>
+            </div>
+            
+            <p>Nombre del video original: videoplayback.mp4</p>
+            <p><a href="https://www.youtube.com/watch?v=62az-x8VjuY&t=1s" target="_blank"> Descargado de Youtube</a> </p>
+            <p>Tipo de licencia: Creative Commons </p>
+            <p>Tamaño video original: 9.183 Kb</p>
+            <p>Tamaño video editado: 13.133 Kb</p>
+        </section>
+    </main>
+    <a href="#header"> <img class="icono" src="img/icono.png"></a>
+
+    <footer class="header">
+        <div class="title">
+            <h1>Juan Carlos Fuentes Lamas</h1>
+            <h3>Mijas Costa (Málaga)</h3>
+        </div>
     </footer>
 </body>
 </html>
